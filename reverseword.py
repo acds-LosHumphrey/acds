@@ -22,5 +22,5 @@ def reverse(user_input):
 
 
 if __name__ == '__main__':
-    user_input = input('Ingrese una oracion: ')
-    print reverse(user_input)
+    USER_INPUT = input('Ingrese una oracion: ')
+    print reverse(USER_INPUT)
