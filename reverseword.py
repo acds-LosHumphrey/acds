@@ -1,16 +1,16 @@
 """@package docstring
 Reverse Word.
 
-More details.
+Receives as a paramenter one sentence. As a result, it prints the sentence in a reverse order.
 """
 def reverse(userInput):
-	"""Documentation for a function.
-    More details.
+	"""Function Reverse.
+	Receives userInput as a sentence
     """
     userInputArray = userInput.split(" ")
     wordResult = ""
     for i in range(1, len(userInputArray)+1):
-    	"""The constructor."""
+    	"""Iterator to go over the sentence and put it backwards"""
         wordResult += userInputArray[len(userInputArray)-i]
         if i < len(userInputArray):
         	wordResult += " "
