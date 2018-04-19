@@ -4,7 +4,7 @@ Reverse Word.
 More details.
 """
 def reverse(userInput):
-	    """Documentation for a function.
+	"""Documentation for a function.
     More details.
     """
     userInputArray = userInput.split(" ")
