@@ -1,20 +1,25 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 """@package docstring
 Reverse Word Test
 
 More details.
 """
+
 import unittest
-import reverseword 
+import reverseword
+
 
 class TestReverse(unittest.TestCase):
 
-	def test_reverse_true(self):
-		result = reverseword.reverse("una oracion")
-		self.assertEqual(result, "oracion una")
+    def test_reverse_true(self):
+        result = reverseword.reverse('una oracion')
+        self.assertEqual(result, 'oracion una')
 
-	def test_reverse_false(self):
-		result = reverseword.reverse("una oracion")
-		self.assertNotEqual(result,"una oracion")
+    def test_reverse_false(self):
+        result = reverseword.reverse('una oracion')
+        self.assertNotEqual(result, 'una oracion')
+
 
 if __name__ == '__main__':
     unittest.main()

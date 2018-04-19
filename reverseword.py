@@ -7,20 +7,20 @@ Receives as a paramenter one sentence. As a result, it prints the sentence in a 
 """
 
 
-def reverse(userInput):
+def reverse(user_input):
     """Function Reverse.
-    Receives userInput as a sentence
+    Receives user_input as a sentence
     """
 
-    userInputArray = userInput.split(' ')
-    wordResult = ''
-    for i in range(1, len(userInputArray) + 1):
-        wordResult += userInputArray[len(userInputArray) - i]
-        if i < len(userInputArray):
-            wordResult += ' '
-    return wordResult
+    user_input_array = user_input.split(' ')
+    word_result = ''
+    for i in range(1, len(user_input_array) + 1):
+        word_result += user_input_array[len(user_input_array) - i]
+        if i < len(user_input_array):
+            word_result += ' '
+    return word_result
 
 
 if __name__ == '__main__':
-    userInput = input('Ingrese una oracion: ')
-    print reverse(userInput)
+    user_input = input('Ingrese una oracion: ')
+    print reverse(user_input)
